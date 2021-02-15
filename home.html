@@ -1,120 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 {% load static %}
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-
-    <!-- External CSS libraries -->
-    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'css/animate.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap-submenu.css' %}">
-
-    <link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap-select.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'css/magnific-popup.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'fonts/font-awesome/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'fonts/flaticon/font/flaticon.css' %}">
-    <link rel="stylesheet" type="text/css" href="{%static 'fonts/linearicons/style.css' %}">
-    <link rel="stylesheet" type="text/css"  href="{%static 'css/jquery.mCustomScrollbar.css' %}">
-    <link rel="stylesheet" type="text/css"  href="{%static 'css/dropzone.css' %}">
-    <link rel="stylesheet" type="text/css"  href="{%static 'css/slick.css' %}">
-    <link rel="stylesheet" type="text/css"  href="{%static 'css/lightbox.min.css' %}">
-    <link rel="stylesheet" type="text/css"  href="{%static 'css/jnoty.css' %}">
-
-    <!-- Custom stylesheet -->
-    <link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
-    <link rel="stylesheet" type="text/css" id="style_sheet" href="{%static 'css/skins/red.css' %}">
-
-    <!-- Favicon icon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
-
-    <!-- Google fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
-
-
-
-    <link rel="stylesheet" type="text/css" href="{% static 'css/ie10-viewport-bug-workaround.css' %}">
-
-      <script  src="{%static 'js/ie-emulation-modes-warning.js' %}"></script>
-  </head>
-  <body>
-
-<!-- Top header start -->
-<header class="top-header th-2 top-header-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-7">
-                <div class="list-inline">
-                    <a href="tel:+55-4XX-634-7071"><i class="fa fa-phone"></i>+55-4XX-634-7071</a>
-                    <a href="tel:info@themevessel.com"><i class="fa fa-envelope"></i>info@themevessel.com</a>
-                    <a href="tel:info@themevessel.com"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-5">
-                <ul class="top-social-media pull-right">
-                    <li>
-                        <a href="login.html" class="sign-in"><i class="fa fa-sign-in"></i> Login</a>
-                    </li>
-                    <li>
-                        <a href="signup.html" class="sign-in"><i class="fa fa-user"></i> Register</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Top header end -->
-
-<!-- Main header start -->
-<header class="main-header sticky-header header-with-top">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand company-logo" href="index.html">
-                <img src="img/logos/black-logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="navbar-collapse collapse w-100" id="navbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cars.html">
-                            Cars
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/carhouse/about.html">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">
-                            Services
-                        </a>
-                    </li>
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown m-hide">
-                        <a href="#full-page-search" class="nav-link h-icon">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- Main header end -->
 
 <!-- Banner start -->
 <div class="banner" id="banner">
@@ -126,7 +14,7 @@
                     <h3>Wow Factor Standard</h3>
                     <h5>Allow us to guide you through the innovative stress<br>
                         free approach in finding your dream car.</h5>
-                    <a href="services.html" class="btn btn-lg btn-theme">Read more</a>
+                    <a href='' class="btn btn-lg btn-theme">Read more</a>
                 </div>
             </div>
             <div class="carousel-item banner-max-height item-bg">
@@ -135,7 +23,7 @@
                     <h3>Explore Your Dream Car</h3>
                     <h5>Allow us to guide you through the innovative stress<br>
                         free approach in finding your dream car.</h5>
-                    <a href="#" class="btn btn-lg btn-theme">Read more</a>
+                    <a href='' class="btn btn-lg btn-theme">Read more</a>
                 </div>
             </div>
             <div class="carousel-item banner-max-height item-bg">
@@ -144,7 +32,7 @@
                     <h3>We Are Wheel</h3>
                     <h5>Allow us to guide you through the innovative stress<br>
                         free approach in finding your dream car.</h5>
-                    <a href="#" class="btn btn-lg btn-theme">Read more</a>
+                    <a href='' class="btn btn-lg btn-theme">Read more</a>
                 </div>
             </div>
         </div>
@@ -211,12 +99,12 @@
             </form>
         </div>
         <!-- Search box 3 end -->
-        <a class="carousel-control-prev none-580" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev none-580" href='' role="button" data-slide="prev">
             <span class="slider-mover-left" aria-hidden="true">
                 <i class="fa fa-angle-left"></i>
             </span>
         </a>
-        <a class="carousel-control-next none-580" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next none-580" href='' role="button" data-slide="next">
             <span class="slider-mover-right" aria-hidden="true">
                 <i class="fa fa-angle-right"></i>
             </span>
@@ -241,7 +129,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$805.00</del></span>
@@ -254,20 +142,20 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-1.jpg" class="overlap-btn">
+                                            <a href='' class="overlap-btn">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-1.jpg">
                                             </a>
-                                            <a href="img/car/car-2.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-2.jpg">
                                             </a>
-                                            <a href="img/car/car-3.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-3.jpg">
                                             </a>
-                                            <a href="img/car/car-4.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-4.jpg">
                                             </a>
-                                            <a href="img/car/car-5.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-5.jpg">
                                             </a>
                                         </div>
@@ -277,10 +165,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Lamborghini Huracán</a>
+                                <a href=''>Lamborghini Huracán</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -298,7 +186,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$830.00</del></span>
@@ -312,20 +200,20 @@
                                     <div class="overlap-btns-area">
 
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-6.jpg" class="overlap-btn">
+                                            <a href='' class="overlap-btn">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-6.jpg">
                                             </a>
-                                            <a href="img/car/car-2.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-2.jpg">
                                             </a>
-                                            <a href="img/car/car-3.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-3.jpg">
                                             </a>
-                                            <a href="img/car/car-4.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-4.jpg">
                                             </a>
-                                            <a href="img/car/car-1.jpg" class="hidden">
+                                            <a href='' class="hidden">
                                                 <img class="hidden" src="img/car/car-1.jpg">
                                             </a>
                                         </div>
@@ -335,10 +223,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Audi Q7 2018</a>
+                                <a href=''>Audi Q7 2018</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -356,7 +244,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$820.00</del></span>
@@ -369,20 +257,20 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-5.jpg" class="overlap-btn" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="overlap-btn" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-2.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-3.jpg" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-4.jpg" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
                                             </a>
                                         </div>
@@ -392,10 +280,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Toyota Prius Specs</a>
+                                <a href=''>Toyota Prius Specs</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -413,7 +301,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$740.00</del></span>
@@ -426,20 +314,20 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-3.jpg" class="overlap-btn" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="overlap-btn" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-2.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-4.jpg" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-5.jpg" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
                                             </a>
                                         </div>
@@ -449,10 +337,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">2015 Porsche Cayenne</a>
+                                <a href=''>2015 Porsche Cayenne</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -470,7 +358,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$805.00</del></span>
@@ -483,20 +371,20 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-2.jpg" class="overlap-btn" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="overlap-btn" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-3.jpg" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-4.jpg" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-5.jpg" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
                                             </a>
                                         </div>
@@ -506,10 +394,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Lexus GS Red Car</a>
+                                <a href=''>Lexus GS Red Car</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -527,7 +415,7 @@
                 <div class="slick-slide-item">
                     <div class="car-box-3">
                         <div class="car-thumbnail">
-                            <a href="car-details.html" class="car-img">
+                            <a href='' class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
                                     <span class="del"><del>$650.00</del></span>
@@ -540,20 +428,20 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                            <a href="img/car/car-4.jpg" class="overlap-btn" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="overlap-btn" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <i class="fa fa-expand"></i>
                                                 <img class="hidden" src="img/car/car-4.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-2.jpg" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-2.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-3.jpg" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-3.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-1.jpg" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-1.jpg" alt="hidden-img">
                                             </a>
-                                            <a href="img/car/car-5.jpg" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <a href='' class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
                                                 <img class="hidden" src="img/car/car-5.jpg" alt="hidden-img">
                                             </a>
                                         </div>
@@ -563,10 +451,10 @@
                         </div>
                         <div class="detail">
                             <h1 class="title">
-                                <a href="car-details.html">Toyota Corolla</a>
+                                <a href=''>Toyota Corolla</a>
                             </h1>
                             <div class="location">
-                                <a href="car-details.html">
+                                <a href=''>
                                     <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                                 </a>
                             </div>
@@ -607,7 +495,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-1.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -628,20 +516,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -651,10 +539,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Lamborghini Huracán</a>
+                            <a href=''>Lamborghini Huracán</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -672,7 +560,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-2.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -693,20 +581,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -716,10 +604,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Lexus GS Red Car</a>
+                            <a href=''>Lexus GS Red Car</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -737,7 +625,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-3.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -758,20 +646,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -781,10 +669,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">2015 Porsche Cayenne</a>
+                            <a href=''>2015 Porsche Cayenne</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -802,7 +690,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-4.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -823,20 +711,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -846,10 +734,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Toyota Corolla</a>
+                            <a href=''>Toyota Corolla</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -867,7 +755,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-5.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -888,20 +776,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -911,10 +799,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Toyota Prius Specs</a>
+                            <a href=''>Toyota Prius Specs</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -932,7 +820,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="car-box">
                     <div class="car-thumbnail">
-                        <a href="car-details.html" class="car-img">
+                        <a href='' class="car-img">
                             <div class="tag">For Sale</div>
                             <img class="d-block w-100" src="img/car/car-6.jpg" alt="car">
                             <div class="facilities-list clearfix">
@@ -953,20 +841,20 @@
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
                                     <div class="car-magnify-gallery">
-                                        <a href="img/car/car-1.jpg" class="overlap-btn">
+                                        <a href='' class="overlap-btn">
                                             <i class="fa fa-expand"></i>
                                             <img class="hidden" src="img/car/car-1.jpg">
                                         </a>
-                                        <a href="img/car/car-2.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-2.jpg">
                                         </a>
-                                        <a href="img/car/car-3.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-3.jpg">
                                         </a>
-                                        <a href="img/car/car-4.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-4.jpg">
                                         </a>
-                                        <a href="img/car/car-5.jpg" class="hidden">
+                                        <a href='' class="hidden">
                                             <img class="hidden" src="img/car/car-5.jpg">
                                         </a>
                                     </div>
@@ -976,10 +864,10 @@
                     </div>
                     <div class="detail">
                         <h1 class="title">
-                            <a href="car-details.html">Audi Q7 2018</a>
+                            <a href=''>Audi Q7 2018</a>
                         </h1>
                         <div class="location">
-                            <a href="car-details.html">
+                            <a href=''>
                                 <i class="flaticon-pin"></i>123 Kathal St. Tampa City,
                             </a>
                         </div>
@@ -1011,96 +899,26 @@
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
             <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+              {% for team in teams %}
                 <div class="slick-slide-item">
                     <div class="team-1">
                         <div class="photo">
-                            <a href="#">
-                                <img src="img/avatar/avatar-12.jpg" alt="team-1" class="img-fluid">
+                            <a href=''>
+                                <img src= "{{ team.photo.url }}" alt="team-1" class="img-fluid">
                             </a>
                             <div class="social-list clearfix">
-                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
+                                <a href='' class="{{team.facebook_link}}" target = "blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href='' class="{{team.twitter_link}}" target = "blank"  class="facebook-bg"><i class="fa fa-twitter"></i></a>
+                                <a href='' class="{{team.google_link}}" target="_blank" class="facebook-bg"><i class="fa fa-google"></i></a>
                             </div>
                         </div>
                         <div class="details">
-                            <h4><a href="team-detail.html">Brandon Miller</a></h4>
-                            <h5>Manager</h5>
+                            <h4><a href=''>{{ team.first_name }} {{ team.last_name }}</a></h4>
+                            <h5>{{ team.designation }}</h5>
                         </div>
                     </div>
                 </div>
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="img/avatar/avatar-9.jpg" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="team-detail.html">Michelle Nelson</a></h4>
-                            <h5>Support Manager</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="img/avatar/avatar-11.jpg" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="team-detail.html">Stone Carolyn</a></h4>
-                            <h5>Creative Director</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="img/avatar/avatar-10.jpg" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="team-detail.html">Martin Smith</a></h4>
-                            <h5>Web Developer</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="img/avatar/avatar-11.jpg" alt="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="team-detail.html">Stone Carolyn</a></h4>
-                            <h5>Creative Director</h5>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -1117,37 +935,14 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
-                <a href="contact.html" class="btn btn-md">Get in Touch</a>
+                <a href='' class="btn btn-md">Get in Touch</a>
             </div>
         </div>
     </div>
 </div>
 <!-- Intro section end -->
 
-<!-- Footer start -->
-<footer class="footer">
 
-    <div class="sub-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p class="copy">© 2020 <a href="#">Carzone Corp.</a> All Rights Reserved.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="social-list-2">
-                        <ul>
-                            <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- Footer end -->
 
 <!-- Full Page Search -->
 <div id="full-page-search">
@@ -1183,7 +978,7 @@
                                         <span class="del-2">$1050.00</span>
                                     </div>
                                     <div class="">
-                                        <a href="car-details.html" class="btn btn-md btn-round btn-theme">Convertible</a>
+                                        <a href='' class="btn btn-md btn-round btn-theme">Convertible</a>
                                     </div>
                                 </div>
                             </div>
@@ -1221,7 +1016,7 @@
                                 <div class="description">
                                     <h3>Description</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
-                                    <a href="car-details.html" class="btn btn-md btn-round btn-theme">Show Detail</a>
+                                    <a href='' class="btn btn-md btn-round btn-theme">Show Detail</a>
                                 </div>
                             </div>
                         </div>
@@ -1232,27 +1027,4 @@
     </div>
 </div>
 
-<script src="{static % 'js/jquery-2.2.0.min.js' %}"></script>
-<script src="{static % 'js/popper.min.js' %}"></script>
-<script src="{static % 'js/bootstrap.min.js' %}"></script>
-<script  src="{static % 'js/bootstrap-submenu.js' %}"></script>
-<script  src="{static % 'js/rangeslider.js' %}"></script>
-<script  src="{static % 'js/jquery.mb.YTPlayer.js' %}"></script>
-<script  src="{static % 'js/bootstrap-select.min.js' %}"></script>
-<script  src="{static % 'js/jquery.easing.1.3.js' %}"></script>
-<script  src="{static % 'js/jquery.scrollUp.js' %}"></script>
-<script  src="{static % 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-<script  src="{static % 'js/dropzone.js' %}"></script>
-<script  src="{static % 'js/slick.min.js' %}"></script>
-<script  src="{static % 'js/jquery.filterizr.js' %}"></script>
-<script  src="{static % 'js/jquery.magnific-popup.min.js' %}"></script>
-<script  src="{static % 'js/jquery.countdown.js' %}"></script>
-<script  src="{static % 'js/jquery.mousewheel.min.js' %}"></script>
-<script  src="{static % 'js/lightgallery-all.js' %}"></script>
-<script  src="{static % 'js/jnoty.js' %}"></script>
-<script  src="{static % 'js/app.js' %}"></script>
-
-
-</body>
-
-</html>
+{% endblock %}
